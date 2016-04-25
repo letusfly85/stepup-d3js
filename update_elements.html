@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Update Elements</title>
+    <style>
+        svg {
+            width: 320px;
+            height: 240px;
+            border: 1px solid skyblue;
+        }
+        .bar {
+            fill: green;
+        }
+    </style>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <h1>Update Elements</h1>
+    <div>
+        <button data-src="data/item1.csv">items1.csv read</button>
+        <button data-src="data/item2.csv">items2.csv read</button>
+        <button data-src="data/item3.csv">items3.csv read</button>
+    </div>
+    <svg id="myGraph"></svg>
+    <script src="js/update_elements.js"></script>
+</body>
+
+</html>
