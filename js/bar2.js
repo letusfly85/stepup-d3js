@@ -16,11 +16,15 @@ d3.select("#myGraph")
 
 d3.select("#updateButton")
   .on("click", function() {
-    console.log("enter")
     dataSet2 = [20, 230, 150, 10, 20];
+    for(var i=0; i<dataSet.length; i++) {
+      dataSet2[i] = Math.floor(Math.random() * 320);
+    }
+    console.log("enter")
     d3.select("#myGraph")
       .selectAll("rect")
       .data(dataSet2)
+      .transition()
       .attr("width", function(d, i) {
         return d + "px";
       })
