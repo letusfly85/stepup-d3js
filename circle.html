@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SVG circle and rect</title>
+    <style>
+        svg {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid black;
+        }
+        rect {
+            fill: red;
+        }
+        .box {
+            stroke: blue;
+            stroke-widht: 10px;
+        }
+        .hoge {
+            fill: orange;
+        }
+        circle {
+            opacity: 0.75;
+            fill: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SVG</h1>
+    <svg>
+        <rect x="30" y="20" width="200" height="100" style="fill:red;stroke:blue;stroke-width:10px"
+        rx="20" ry="20"></rect>
+        <rect x="80" y="70" width="200" height="100" id="box" />
+        <rect x="100" y="120" width="200" height="100" id="box" />
+        <circle cx="190" cy="140" r="80"></circle>
+        <path d="M80,50 L220,90 L280,200" />
+        <path d="M10,110 C80,-100 150,80 300,110" />
+        <text x="25" y="50" font-size="24px" text-anchor="start" font-weight="bold" style="fill:gold">sample text</text>
+        <text x="25" y="80" font-size="24px" text-anchor="middle" font-family="Helvetica"
+        font-weight="bold" style="fill:gold">sample text</text>
+        <text x="25" y="110" font-size="24px" text-anchor="end" font-family="Osaka" font-weight="bold"
+        style="fill:gold">sample text</text>
+        <g style="opacity:0.25">
+            <rect x="200" y="50" width="100" height="80"></rect>
+            <text x="200" y="40" text-anchor="middle" style="fill:black">HogehogeText!</text>
+        </g>
+        <g transform="translate(200, 140) rotate(45, 200, 100)">
+            <rect x="200" y="50" width="100" height="80" style="fill:orange"></rect>
+            <text x="200" y="40" text-anchor="start" style="fill:black">My Text!</text>
+        </g>
+</body>
+
+</html>
